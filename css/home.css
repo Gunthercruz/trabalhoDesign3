@@ -77,7 +77,6 @@ section>div {
     display: flex;
     flex-wrap: wrap; 
     gap: 15px;
-    background-size: contain;
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
