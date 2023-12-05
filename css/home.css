@@ -1,168 +1,133 @@
-*,
-header li a {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
-
-.c-img,
-.c-item {
-    height: 400px
-}
-
-footer,
-header {
-    padding: 20px 0;
-    text-align: center
-}
-
-footer ul,
-header ul {
-    display: flex;
-    list-style: none
-}
-
-body,
-footer ul {
-    margin: 0;
-    padding: 0
-}
-
-.btn-black,
-footer div,
-footer li a,
-header {
-    color: #fff
-}
-
-.btn-black,
-footer,
-footer li a:hover {
-    background-color: #000
-}
-
-.main-title,
-figure,
-footer,
-footer div,
-footer ul,
-header,
-section {
-    text-align: center
-}
-
-#aboutArea img,
-#models table,
-img {
-    max-width: 100%
-}
-
-header img,
-img {
-    height: auto;
-    display: block
-}
-
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
 }
 
 body {
+    padding: 0;
+    margin: 0;
     background-color: #b1b1b1;
-    transition: background-color .5s ease-in-out
+    transition: background-color 0.5s ease-in-out;
 }
 
 header {
-    transition: .3s ease-in-out
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    transition: all 0.3s ease-in-out;
 }
 
 header img {
-    width: 120px
+    width: 120px;
+    height: auto;
+    display: block;
 }
 
 header div {
     display: flex;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
 }
 
 header ul {
-    gap: 30px
+    display: flex;
+    list-style: none;
+    gap: 30px;
 }
 
 header li a {
-    color: #857b7b;
+    color: rgb(133, 123, 123);
     text-decoration: dotted;
-    padding: 10px;
-    border-radius: 5px
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 header li a:hover {
-    transition: .1s;
+    transition: 100ms;
     text-decoration: underline;
     cursor: pointer;
-    background-color: #020202
+    background-color: #020202;
+}
+
+.c-item {
+    height: 400px;
 }
 
 .c-img {
-    object-fit: cover
+    height: 400px;
+    object-fit: cover;
 }
 
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px
+    padding: 20px;
 }
 
 section {
+    text-align: center;
     width: 100vw;
-    position: relative
+    position: relative;
 }
 
 section>div {
     position: relative;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
     gap: 15px;
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: center
+    background-position: center;
 }
 
 #section3 .flex-card {
     flex: 1;
-    max-width: 100%
+    max-width: 100%;
 }
 
 section a {
     margin: auto;
-    transition: .5s;
-    text-decoration: none
+    transition: 500ms;
+    text-decoration: none;
 }
 
 section a:hover {
     background-color: #5f5f5f;
     border-radius: 10px;
-    transition: .5s
+    transition: 500ms;
+}
+
+.btn-black{
+    background-color: #000;
+    color: #fff;
 }
 
 #aboutArea .container {
-    max-width: 700px
+    max-width: 700px; /* Defina uma largura máxima para o contêiner para controlar o tamanho da imagem */
 }
 
 #aboutArea img {
+    max-width: 100%;
     height: auto;
-    margin: 25px auto 0
+    margin: 25px auto 0; /* Centralize a imagem horizontalmente */
 }
 
 #aboutArea .aboutTitle {
     margin-top: 20px;
-    font-size: 24px
+    font-size: 24px; /* Ajuste o tamanho da fonte do título conforme necessário */
+}
+
+#aboutArea p {
+    font-size: 18px; /* Ajuste o tamanho da fonte do parágrafo conforme necessário */
 }
 
 .main-title {
     color: #000;
-    margin: 0 0 65px;
-    font-size: 40px
+    margin: 0 0 65px 0;
+    font-size: 40px;
+    text-align: center;
 }
 
 .main-title::after {
@@ -171,120 +136,161 @@ section a:hover {
     width: 15%;
     position: absolute;
     top: 80px;
-    left: 42.5%
+    left: 42.5%;
 }
 
 .aboutTitle {
     font-size: 17px;
     color: #000;
-    font-weight: 700
+    font-weight: bold;
 }
 
 #aboutArea p {
-    font-size: 18px;
-    text-align: justify;
-    line-height: 1.5;
-    margin-right: 20px
+    font-size: 18px; /* Ajuste o tamanho da fonte do parágrafo conforme necessário */
+    text-align: justify; /* Justifique o texto */
+    line-height: 1.5; /* Adicione um espaçamento entre as linhas para melhor legibilidade */
+    margin-right: 20px;
+}
+
+#models table {
+    max-width: 100%; /* Ajuste a largura máxima para dispositivos móveis */
 }
 
 footer {
+    background-color: #000000;
     display: flex;
     justify-content: center;
-    color: #000;
+    padding: 40px 0;
+    color: #000000;
+    text-align: center;
+    padding: 20px 0;
     position: sticky;
-    margin: auto
+    margin: auto;
 }
 
 footer div {
+    color: #fff;
     justify-content: space-between;
     align-items: center;
     display: inline-block;
     flex-direction: row;
     align-items: normal;
-    gap: 30px
+    gap: 30px;
+    text-align: center;
 }
 
 footer p {
-    font-size: larger
+    font-size: larger;
 }
 
 footer>a {
     display: flex;
     align-items: center;
-    justify-items: center
+    justify-items: center;
 }
 
 footer ul {
+    text-align: center;
     bottom: 0;
+    margin: 0;
+    display: flex;
     flex-direction: column;
-    gap: 10px
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+footer li a {
+    color: #fff;
 }
 
 footer li a:hover {
     text-decoration: underline;
-    transition: .2s
+    transition: 200ms;
+    background-color: #000000;
 }
 
 figure {
     padding: 10px;
-    margin: 10px
+    text-align: center;
+    margin: 10px;
 }
 
 img {
-    margin: 0 auto
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Adicione isso para centralizar as imagens horizontalmente */
 }
 
-img[loading=lazy] {
+/* Adicione esta regra para aplicar o lazy loading */
+img[loading="lazy"] {
     display: block;
-    filter: blur(.2px)
+    filter: blur(0.2px); /* Adicione um desfoque enquanto a imagem está sendo carregada (opcional) */
 }
 
 figure img {
-    max-width: 70%
+    max-width: 70%;
 }
 
-@media only screen and (max-width:576px) {
+@media only screen and (max-width: 576px) {
+    /* Ajuste o tamanho da fonte para os títulos dos cards */
     #section3 .flex-card h5.card-title {
         font-size: 18px;
-        margin-bottom: 5px
+        margin-bottom: 5px;
     }
 
+    /* Ajuste o tamanho da fonte para o texto dos cards */
     #section3 .flex-card p {
         font-size: 16px;
-        margin-bottom: 10px
+        margin-bottom: 10px;
     }
 
+    /* Ajuste o tamanho da fonte para os botões dos cards */
     #section3 .flex-card .btn-primary {
-        font-size: 14px
+        font-size: 14px;
     }
 
+    /* Ajuste o tamanho da imagem nos cards */
     #section3 .flex-card img {
         max-width: 100%;
-        height: auto
+        height: auto;
     }
 
+    /* Coloque os cards um em cima do outro */
     #section3 .flex-card {
         flex: 1 0 100%;
-        margin-bottom: 20px
+        margin-bottom: 20px;
     }
 }
 
-@media only screen and (max-width:767px) {
+@media only screen and (max-width: 767px) {
     header {
-        padding: 10px 0
+        padding: 10px 0;
     }
 
     header div {
         flex-direction: column;
-        gap: 10px
+        gap: 10px;
     }
 
     header ul {
         justify-content: center;
-        margin-top: 10px
+        margin-top: 10px;
     }
 
     header li {
-        margin: 0
+        margin: 0;
     }
+}
+
+#carouselImg {
+    max-height: 400px;
+    overflow: hidden;
+}
+
+#carouselImg img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
 }
